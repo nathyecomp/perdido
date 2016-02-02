@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Automatic">
-    <entity name="Media" syncable="YES">
+    <entity name="Media" representedClassName=".Media" syncable="YES">
         <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="urlMedia" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Sugestao" syncable="YES"/>
     </entity>
-    <entity name="Sugestao" syncable="YES">
+    <entity name="Sugestao" representedClassName=".Sugestao" syncable="YES">
         <attribute name="data" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="descricao" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
@@ -12,7 +12,7 @@
         <attribute name="titulo" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Sugestao" positionX="171" positionY="36" width="128" height="118"/>
-        <element name="Media" positionX="-54" positionY="27" width="128" height="73"/>
+        <element name="Media" positionX="-54" positionY="27" width="128" height="75"/>
+        <element name="Sugestao" positionX="171" positionY="36" width="128" height="120"/>
     </elements>
 </model>

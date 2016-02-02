@@ -9,5 +9,16 @@
 import UIKit
 
 class CadastroViewController: UIViewController {
+    
+    @IBOutlet weak var txtTitle: UITextField!
+    
+    
+    @IBOutlet weak var txtDescription: UITextView!
+    
+    @IBOutlet weak var txtLatitude: UITextField!
+    
+    @IBOutlet weak var txtLongitude: UITextField!
+    
+    
 
 }
