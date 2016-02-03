@@ -99,6 +99,9 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="74" y="469" width="67" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="takePhoto:" destination="toA-Kc-Z8e" eventType="touchUpInside" id="LAk-7S-qCd"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yzj-ce-9MM">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -141,6 +144,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="Q2D-xi-he1"/>
                     <connections>
+                        <outlet property="imageView" destination="yzj-ce-9MM" id="8h1-wK-h0G"/>
                         <outlet property="txtDescription" destination="84G-oA-lR6" id="gRN-k2-bbx"/>
                         <outlet property="txtLatitude" destination="zTe-Ut-H94" id="bdI-oJ-Pjl"/>
                         <outlet property="txtLongitude" destination="BbY-ne-O4I" id="HS3-LT-a5U"/>
