@@ -28,7 +28,7 @@ class PerdidoDAO {
     // update existing object
     static func update(task: Sugestao) {
         do {
-            try DatabaseManager.sharedInstance.managedObjectContext.save()
+            try AppDelegate.sharedInstance.managedObjectContext.save()
         } catch let error as NSError {
             print("Erro ao alterar tarefa: ", error)
         }
@@ -36,11 +36,11 @@ class PerdidoDAO {
     }
     
     // delete object
-    static func delete(task: Task) {
-        DatabaseManager.sharedInstance.managedObjectContext.deleteObject(task)
+    static func delete(task: Sugestao) {
+        AppDelegate.sharedInstance.managedObjectContext.deleteObject(task)
         
         do {
-            try DatabaseManager.sharedInstance.managedObjectContext.save()
+            try AppDelegate.sharedInstance.managedObjectContext.save()
         } catch let error as NSError {
             print("Erro ao deletar tarefa: ", error)
         }
@@ -48,14 +48,14 @@ class PerdidoDAO {
     }
     
     // fetch all existing objects
-    static func fetchAllTasks() -> [Task] {
-        let request = NSFetchRequest(entityName: "Task")
-        request.sortDescriptors = [NSSortDescriptor(key: "date", ascending: true)]
+    static func fetchAllTasks() -> [Sugestao] {
+        let request = NSFetchRequest(entityName: "Sugestao")
+        request.sortDescriptors = [NSSortDescriptor(key: "data", ascending: true)]
         
-        var results = [Task]()
+        var results = [Sugestao]()
         
         do {
-            results = try DatabaseManager.sharedInstance.managedObjectContext.executeFetchRequest(request) as! [Task]
+            results = try AppDelegate.sharedInstance.managedObjectContext.executeFetchRequest(request) as! [Sugestao]
         } catch let error as NSError {
             print("Erro ao buscar tarefas: ", error)
         }
