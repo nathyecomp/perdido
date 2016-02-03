@@ -19,6 +19,7 @@
 		3F8D0D871C612CD3009E0992 /* Sugestao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8D0D831C612CD3009E0992 /* Sugestao.swift */; };
 		3F8D0D881C612CD3009E0992 /* Media+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8D0D841C612CD3009E0992 /* Media+CoreDataProperties.swift */; };
 		3F8D0D891C612CD3009E0992 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8D0D851C612CD3009E0992 /* Media.swift */; };
+		3F8D0D8B1C613A07009E0992 /* PerdidoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8D0D8A1C613A07009E0992 /* PerdidoDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		3F8D0D831C612CD3009E0992 /* Sugestao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sugestao.swift; sourceTree = "<group>"; };
 		3F8D0D841C612CD3009E0992 /* Media+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Media+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3F8D0D851C612CD3009E0992 /* Media.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		3F8D0D8A1C613A07009E0992 /* PerdidoDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerdidoDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				3F1F45C31C6118BE00B498ED /* Perdido.xcdatamodeld */,
 				3F8D0D821C612CD3009E0992 /* Sugestao+CoreDataProperties.swift */,
 				3F8D0D831C612CD3009E0992 /* Sugestao.swift */,
+				3F8D0D8A1C613A07009E0992 /* PerdidoDAO.swift */,
 				3F8D0D841C612CD3009E0992 /* Media+CoreDataProperties.swift */,
 				3F8D0D851C612CD3009E0992 /* Media.swift */,
 			);
@@ -165,6 +168,7 @@
 				3F8D0D891C612CD3009E0992 /* Media.swift in Sources */,
 				3F1F45D41C611BFE00B498ED /* CadastroViewController.swift in Sources */,
 				3F8D0D861C612CD3009E0992 /* Sugestao+CoreDataProperties.swift in Sources */,
+				3F8D0D8B1C613A07009E0992 /* PerdidoDAO.swift in Sources */,
 				3F1F45D21C61195D00B498ED /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
